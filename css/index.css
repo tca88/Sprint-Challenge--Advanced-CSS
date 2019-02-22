@@ -479,7 +479,6 @@ footer {
   height: 36px;
   border-width: 0 0 2px 0;
   border-color: #000;
-  font-family: Lusitana, serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
@@ -489,7 +488,7 @@ footer {
 }
 .contact .main-contact-form .contact-form .input-text:focus + .label,
 .contact .main-contact-form .contact-form .input-text.not-empty + .label {
-  transform: translateY(-24px);
+  transform: translateY(-2.4rem);
 }
 .contact .main-contact-form .contact-form .label {
   position: absolute;
