@@ -465,6 +465,11 @@ footer {
   padding-bottom: 48px;
   padding-top: 5rem;
 }
+@media ( max-width: 500px ) {
+  .contact .main-contact-form .get-in-touch .contact-title {
+    padding-top: 10rem;
+  }
+}
 .contact .main-contact-form .contact-form .form-field {
   position: relative;
   margin: 32px 0;
