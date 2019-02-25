@@ -2,17 +2,49 @@
 
 .home {
 
+  .fade-in-mixin();
+
   .intro {
+    padding: 0 4rem 0 4rem;
+    .fade-in-mixin();
 
-    h2 {
-      padding: 15px;
+    @media @phone {
+      padding-left: 0;
+      padding-right: 0;
     }
 
-    p {
-      padding:0 15px;
-    }
+    .intro-image img {
+      border-radius: .5rem;
+      width: 100%;
+      height: auto;
+
+      @media @phone {
+        width: 100%;
+        height: 100%;
+        padding: 9.5rem 0 0 0!important;
+      }
+    } // intro main image
+
+    .intro-text-content {
+
+      color: @main-font-color;
+
+      @media @phone {
+        padding-left: .2rem;
+        padding-right: .2rem;
+      }
+      
+      h2 {
+        padding: 15px;
+        color: @header-font-color;
+      }
+
+      p {
+        padding:0 15px;
+      }
+    } // intro text content 
   
-  }
+  } // intro content
 
   .space-images {
     display: flex;
@@ -25,10 +57,38 @@
       border-radius: 20px;
       height: 100%;
     }
+
+    .space-image1 {
+
+      @media @phone {
+        padding-left: .5rem;
+        padding-right: .5rem;
+        width: 100%;
+        height: 100%;
+      }
+      
+    }
+
+    .space-image2 {
+
+      @media @phone {
+        display: none;
+      }
+      
+    }
+
+    .space-image3 {
+
+      @media @phone {
+        display: none;
+      }
+      
+    }
   }
 
   .visit-planets {
     padding: 15px;
+    color: @main-font-color;
 
     h3 {
       margin-top: 11px;
@@ -36,6 +96,7 @@
 
     p {
       margin-top: 13px;
+
     }
   }
 
@@ -45,9 +106,26 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    color: @main-font-color;
+
+    @media @phone {
+      margin-top: 2rem;
+      flex-direction: column-reverse;
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 2rem;
+    }
 
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-top: 2rem;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,6 +136,13 @@
       }
 
       .btn {
+        .button(25%, white, @btn-bg-color);
+        @media @phone {
+          width: 100%;
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+          font-size: 1.8rem;
+        }
       }
     }
 
@@ -70,6 +155,11 @@
         height: auto;
         border-radius: 10px;
       }
+        @media @phone {
+          width: 100%;
+          height: 100%;
+          padding-right: 3rem;
+        }
     }
   }
 }// home
